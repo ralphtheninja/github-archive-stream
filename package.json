@@ -16,11 +16,16 @@
   "keywords": [
     "github",
     "archive",
+    "devops",
     "tarball",
     ".tar.gz",
     "zip",
     "stream"
   ],
   "author": "lms <ralphtheninja@riseup.net>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ralphtheninja/github-archive-stream"
+  },
   "license": "MIT"
 }

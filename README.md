@@ -31,8 +31,8 @@ Options takes the following properties:
 {
   repo: 'user/repo',      // github repository, required
   auth: {
-    user: 'username',     // github user, required
-    token: 'agithubtoken' // github token, might be required
+    user: 'username',     // github user, required if private repo
+    token: 'agithubtoken' // github token, required if private repo
   },
   ref: '315ae99',         // git ref, defaults to 'master'
   format: 'zipball'       // archive format, defaults to 'tarball'
