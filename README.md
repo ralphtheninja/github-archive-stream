@@ -1,5 +1,7 @@
 # github-archive-stream
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ralphtheninja/github-archive-stream.svg)](https://greenkeeper.io/)
+
 Streams a `.tar.gz` (or `.zip`) archive from GitHub using the [archive link api](https://developer.github.com/v3/repos/contents/#get-archive-link). It makes two http requests since the first is _always_ a `30x` redirect response.
 
 ```
