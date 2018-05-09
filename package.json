@@ -27,5 +27,8 @@
     "type": "git",
     "url": "git://github.com/ralphtheninja/github-archive-stream"
   },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "license": "MIT"
 }

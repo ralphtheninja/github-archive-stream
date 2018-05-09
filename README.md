@@ -2,8 +2,10 @@
 
 > Streams a `.tar.gz` (or `.zip`) archive from GitHub using the [archive link api](https://developer.github.com/v3/repos/contents/#get-archive-link). It makes two http requests since the first is _always_ a `30x` redirect response.
 
+[![npm](https://img.shields.io/npm/v/github-archive-stream.svg)](https://www.npmjs.com/package/github-archive-stream)
+![Node version](https://img.shields.io/node/v/github-archive-stream.svg)
 [![build status](http://img.shields.io/travis/ralphtheninja/github-archive-stream.svg?style=flat)](http://travis-ci.org/ralphtheninja/github-archive-stream)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ralphtheninja/github-archive-stream.svg)](https://greenkeeper.io/)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -16,13 +18,13 @@ $ npm i github-archive-stream -S
 Stream latest master branch of `ipfs/go-ipfs` to the file `'ipfs.tar.gz'`.
 
 ```js
-var archive = require('github-archive-stream')
+const archive = require('github-archive-stream')
 archive('ipfs/go-ipfs').pipe(require('fs').createWriteStream('ipfs.tar.gz'))
 ```
 
 ## API
 
-#### `var stream = archive(repo|opts)`
+### `const stream = archive(repo|opts)`
 
 Create an archive stream.
 
