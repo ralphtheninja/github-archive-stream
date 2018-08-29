@@ -22,13 +22,13 @@
     "zip",
     "stream"
   ],
-  "author": "lms <ralphtheninja@riseup.net>",
+  "author": "Lars-Magnus Skog <ralphtheninja@riseup.net>",
   "repository": {
     "type": "git",
     "url": "git://github.com/ralphtheninja/github-archive-stream"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "license": "MIT"
 }
