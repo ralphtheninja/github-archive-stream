@@ -8,7 +8,7 @@ function archiveStream (opts) {
   }
 
   var repo = opts.repo
-  assert.equal(typeof repo, 'string', '.repo required')
+  assert.strictEqual(typeof repo, 'string', '.repo required')
 
   var format = opts.format || 'tarball'
   var ref = opts.ref || 'master'
@@ -21,8 +21,8 @@ function archiveStream (opts) {
   }
 
   if (opts.auth) {
-    assert.equal(typeof opts.auth.user, 'string', '.user required')
-    assert.equal(typeof opts.auth.token, 'string', '.token required')
+    assert.strictEqual(typeof opts.auth.user, 'string', '.user required')
+    assert.strictEqual(typeof opts.auth.token, 'string', '.token required')
     options.auth = opts.auth.user + ':' + opts.auth.token
   }
 
