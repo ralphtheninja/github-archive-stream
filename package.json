@@ -8,7 +8,7 @@
     "through2": "^2.0.1"
   },
   "devDependencies": {
-    "standard": "^12.0.0"
+    "standard": "^13.0.2"
   },
   "scripts": {
     "test": "standard"
